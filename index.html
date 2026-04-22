@@ -82,6 +82,20 @@ li:first-child {
     font-weight: bold;
     box-shadow: 0 0 15px gold;
 }
+
+.hint {
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 15px;
+    opacity: 0.8;
+    animation: fade 2s infinite alternate;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
 </style>
 </head>
 
@@ -89,6 +103,7 @@ li:first-child {
 
 <div class="container">
     <h1>Top Psychopath</h1>
+    <p class="hint">Drag dan geser untuk memindahkan</p>
     <ul id="leaderboard">
         <li draggable="true"><span class="rank">1.</span><span class="name">Irsyad</span></li>
         <li draggable="true"><span class="rank">2.</span><span class="name">Hilmi</span></li>
